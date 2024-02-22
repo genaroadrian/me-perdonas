@@ -1,0 +1,41 @@
+button {
+  border-radius: 0 !important;
+  min-width: 100px;
+  min-height: 50px;
+  font-size: 20px !important;
+  transition: background-color 0.3s ease;
+}
+#success {
+  display: none;
+}
+.success-text {
+  transition: font-size 0.5s ease;
+  animation: cambiarTamaño 4s infinite;
+}
+.animacion {
+  animation: animarBoton 0.5s ease;
+}
+
+@keyframes cambiarTamaño {
+  0% {
+    font-size: calc(1.375rem + 1.5vw); /* Tamaño inicial del texto */
+  }
+  50% {
+    font-size: calc(1.375rem + 2.5vw); /* Tamaño máximo del texto */
+  }
+  100% {
+    font-size: calc(1.375rem + 1.5vw); /* Tamaño inicial del texto */
+  }
+}
+
+@keyframes animarBoton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
